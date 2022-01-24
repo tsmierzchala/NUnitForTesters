@@ -23,5 +23,14 @@ namespace NUnitForTesters.Services
                 _ => "That should not happen at all",
             };
         }
+
+        public bool IsPrime(int i)
+        {
+            if (i == 1)
+            {
+                return false;
+            }
+            throw new NotImplementedException("Please create a test first");
+        }
     }
 }
