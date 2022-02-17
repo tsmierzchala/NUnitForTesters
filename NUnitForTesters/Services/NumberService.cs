@@ -18,7 +18,7 @@ namespace NUnitForTesters.Services
                 int n when n >= 10 && n < 20 || (n > 80) => "Well no...",
                 int n when n >= 20 && n < 30 || (n > 60) => "No but close...",
                 int n when n >= 30 && n < 40 || (n > 50) => "No but close...",
-                int n when (n >= 40 && n < 42) || (n > 42 && n < 50) => "Almost there!",
+                int n when (n >= 40 && n < 42) || (n > 42 && n <= 50) => "Almost there!",
                 42 => "Exactly!",
                 _ => "That should not happen at all",
             };

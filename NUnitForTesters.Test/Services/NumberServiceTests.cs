@@ -19,5 +19,12 @@ namespace NUnitForTesters.Test.Services
             Assert.IsFalse(result, "1 should not be prime");
         }
 
+        [Test]
+        public void TestRange([Range(1, 100)] int i)
+        {
+            string answer = _numberService.IsItTheAnswerToUltimateQuestionOfLife(i);
+            StringAssert.DoesNotMatch(answer, "That should not happen at all");
+        }
+
     }
 }
