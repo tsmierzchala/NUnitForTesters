@@ -18,5 +18,6 @@ namespace NUnitForTesters.Test.Services
             var result = _numberService.IsPrime(1);
             Assert.IsFalse(result, "1 should not be prime");
         }
+
     }
 }
